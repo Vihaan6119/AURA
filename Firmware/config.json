@@ -1,0 +1,10 @@
+{
+  "keys": [
+    ["CONTROL", "C"],
+    ["CONTROL", "V"],
+    ["GIT", "ADD"],
+    ["GIT", "COMMIT"],
+    ["F5"],
+    ["CONTROL", "S"]
+  ]
+}
