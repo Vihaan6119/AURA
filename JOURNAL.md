@@ -110,6 +110,6 @@ With the board geometry finalized, my next goal was to build a clean 3D-printabl
 
 ![Screenshot 2026-10-22 191505](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/7e617fae9a524549760db41d431c79f8c9d89aae01a8f2b00d0fad3cea9af453.png)
 
-Getting the coordinate math right for the internal standoffs and walls took a few iterations, but it's coming together nicely! Next session, I'll finish up the top lid geometry and run a test print.
+Getting the coordinate math right for the internal standoffs and walls took a few iterations, but it's coming together nicely! Next session, I'll finish up the top lid geometry and the bottom half of the case and assemble the exclosure with the PCB into 1 .step file
 
 **Total time spent: 2h**
