@@ -74,4 +74,3 @@ This is the way (for this I am using Onshape. I think it will almost similar for
 ![alt text](<Screenshot 2026-10-11 124917.png>)
 ![alt text](<Screenshot 2026-10-22 214454.png>)
 ![alt text](<Screenshot 2026-10-22 214441.png>)
-![alt text](<Screenshot 2026-10-11 125030-1.png>)
