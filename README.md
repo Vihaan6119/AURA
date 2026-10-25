@@ -74,3 +74,17 @@ This is the way (for this I am using Onshape. I think it will almost similar for
 ![alt text](<Screenshot 2026-10-11 124917.png>)
 ![alt text](<Screenshot 2026-10-22 214454.png>)
 ![alt text](<Screenshot 2026-10-22 214441.png>)
+
+
+| Item | Qty | Supplier | Cost/item | Total Cost | Link |
+| :--- | :---: | :--- | ---: | ---: | :--- |
+| Raspberry Pi Pico | 1 | besomi | $8.00 | $8.00 | [Link](https://besomi.com/ae_en/) |
+| SSD1306 OLED Display (0.91") | 1 | AliExpress | $1.23 | $1.23 | [Link](https://ar.aliexpress.com/?gatewayAdapt=glo2ara) |
+| EC11 Rotary Encoder with Switch | 1 | LCSC | $2.22 | $2.22 | [Link](https://www.lcsc.com/) |
+| Cherry MX Mechanical Switches | 10 | AliExpress | $0.71 | $7.10 | [Link](https://ar.aliexpress.com/?gatewayAdapt=glo2ara) |
+| M3 Screws and Standoffs Set | 30 | ALiExpress | $0.12 | $3.60 | [Link](https://ar.aliexpress.com/?gatewayAdapt=glo2ara) |
+| Custom PCB (AURA) | 5 | JLC PCB | $0.80 | $4.00 | [Link](https://jlcpcb.com/) |
+| Estimated total shipping | 1 | Printing Legion | $3.00 | $3.00 | [Link](https://printlegion.hackclub.com/) |
+
+**Tax & shipping:** $15.59  
+**Total:** $44.75
