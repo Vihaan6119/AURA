@@ -6,7 +6,7 @@
 > [!NOTE]
 > This devlog is mirrored from [Half Life](https://halflife.hackclub.com) – [open the project](https://halflife.hackclub.com/projects/cmuv34jry0d1901sm8xl0uic3). Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
-> AURA is a compact, custom hardware controller powered by a Raspberry Pi Pico that brings physical controls to developer workflows. Equipped with an EC11 rotary encoder and a 0.96" SSD1306 OLED screen, AURA operates as an air-gapped USB HID device. It allows you to scrub line-by-line through source code in VS Code, step cleanly through debugger execution breakpoints, and navigate Git commit diffs without moving your hands away from your workstation or physical study materials.
+> AURA is a compact, custom hardware controller powered by a Raspberry Pi Pico that brings physical controls to developer workflows. Equipped with an EC11 rotary encoder and a 0.96" SSD1306 OLED screen, AURA operates as an air-gapped USB HID device. It allows you to scrub line-by-line through source code in VS Code, step cleanly through debugger execution breakpoints, and navigate Git commit diffs without moving your hands away from your workstation or physical study materials. Link for Onshape:  https://cad.onshape.com/documents/4a65ffe63cb54f7f68037410/w/58d4dcfbe5b52a8e9ebf3ef9/e/34aa017ca2b49bd0b879c39c
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
