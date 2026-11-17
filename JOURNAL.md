@@ -44,7 +44,7 @@ I built a custom macro pad  to help in  my navigation of vs-code, PDFs and media
 
 Here is the complete log of the work completed across the design phases:
 -----------
-### 11-10-26:
+### 9-10-26:
 ----------
 ## Research and initial planning for **AURA**
 
@@ -58,7 +58,7 @@ I had made 3 different layouts for the PCB and the 3D model. Then I have settled
 
 ![IMG_0026](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/ed8e2e382df3fa56168a825ad375642b2a393598d0bdf412e4a898cea65dd0a8.jpg)
 ---------
-# 12-10-26
+# 10-10-26
 -----------
 ## 1. Schematic Design & Pin Mapping
 * **Microcontroller:** Integrated the Raspberry Pi Pico (`RaspberryPi_Pico_Debug`) as the brain of the board.
@@ -83,7 +83,7 @@ I had made 3 different layouts for the PCB and the 3D model. Then I have settled
 
 ------------------
 
-13-10-26
+11-10-26
 --------------------
 
 First i have used AI for making the concept model for the 3d model for AURA. here are some of them:
