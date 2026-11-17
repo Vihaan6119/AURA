@@ -18,7 +18,7 @@
 2. [2026-10-09: Work session](#2026-10-09-work-session)
 3. [2026-10-11: # Complete Hardware Design & Firmware Architecture](#2026-10-11-complete-hardware-design-firmware-architecture)
 4. [2026-10-22: Today I spent 2 hours working on **AURA**, focusing on two major milestones: optimizing the PCB layout to cut down manufacturing costs and then using Solid Craft to design the custom 3D-printable case](#2026-10-22-today-i-spent-2-hours-working-on-aura-focusing-on)
-5. [2026-10-23: Today I spent 4 hours diving deep into **Fusion360 and Onshape** to design a custom 3D-printable enclosure for the AURA.](#2026-10-23-today-i-spent-4-hours-diving-deep-into-fusion360-)
+5. [2026-10-23: Today I spent 4 hours working with **Fusion360 and Onshape** to design a custom 3d enclosure for the AURA.](#2026-10-23-today-i-spent-4-hours-working-with-fusion360-and-)
 
 ## Design
 
@@ -134,15 +134,15 @@ I will try to finish the enclosure asps cus i have my school to catch on and hav
 
 **Total time spent: 2h**
 
-### 2026-10-23: Today I spent 4 hours diving deep into **Fusion360 and Onshape** to design a custom 3D-printable enclosure for the AURA.
+### 2026-10-23: Today I spent 4 hours working with **Fusion360 and Onshape** to design a custom 3d enclosure for the AURA.
 
 **4h**
 
-Today I spent 4 hours diving deep into **Fusion360 and Onshape** to design a custom 3D-printable enclosure for the AURA.
+Today I spent 4 hours working with **Fusion360 and Onshape** to design a custom 3d enclosure for the AURA.
 
-Designing a case around a custom PCB always sounds straightforward until you start dealing with tight tolerances and coordinate math. My main goal for this session was to build a clean two-part enclosure complete with internal mounting standoffs and precise cutouts for the Raspberry Pi Pico USB port, the OLED display, and the rotary knob.
+Today is the last day working on my project, and I can finally fully focus on studying for my exams.
 
-### Tackling PCB Coordinates & Properly Uploading the Assembled Model of the PCB
+### Tackling PCB uploading problem
 
 One of the trickiest parts of making this enclosure was making sure that the PCB and all the components on that PCB come together perfectly so that I can just make the enclosure on it.
 
@@ -151,14 +151,18 @@ One of the trickiest parts of making this enclosure was making sure that the PCB
 But somehow it got the PCB in a proper and assembled way
 
 ![Screenshot 2026-10-22 191505](https://halflife.hackclub-assets.com/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/7e617fae9a524549760db41d431c79f8c9d89aae01a8f2b00d0fad3cea9af453.png)
-
+-----
 ### Making the enclosure around it
 
 After I got the issue out of the way, I started to design the enclosure with the PCB as the reference and made a simple box.
 
+![Screenshot 2026-10-14 233142](https://halflife.hackclub-assets.com/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/a8e44e0f72ec5b8616f2f285fcd01ce762f7935e90740c912190417ea48a9f60.png)
+
 Then after much more sketching, extruding, shelling, and much more things, I finally got the final AURA enclosure ready, which actually fits the PCB with enough tolerance to easily fit inside it.
 
 The base has 1 cutout on the back, which lets us plug the power/data connector to the Raspberry Pi Pico.
+
+![image](https://halflife.hackclub-assets.com/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/51a1fb47f88cd24c61899615082e065f3f6deab6ca400c3342720751c4ce2220.png)
 
 The lid has the cutouts for the screen, the knob, and the 6 switches so that I can easily access them.
 
