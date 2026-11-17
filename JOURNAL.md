@@ -18,7 +18,7 @@
 2. [2026-10-09: Work session](#2026-10-09-work-session)
 3. [2026-10-11: # Complete Hardware Design & Firmware Architecture](#2026-10-11-complete-hardware-design-firmware-architecture)
 4. [2026-10-22: Today I spent 2 hours working on **AURA**, focusing on two major milestones: optimizing the PCB layout to cut down manufacturing costs, and then jumping into OpenSCAD to design the custom 3D-printable](#2026-10-22-today-i-spent-2-hours-working-on-aura-focusing-on)
-5. [2026-10-23: Today I spent 2 hours diving deep into **Fusion360 and Onshape** to design a custom 3D-printable enclosure for the AURA.](#2026-10-23-today-i-spent-2-hours-diving-deep-into-fusion360-)
+5. [2026-10-23: Today I spent 4 hours diving deep into **Fusion360 and Onshape** to design a custom 3D-printable enclosure for the AURA.](#2026-10-23-today-i-spent-4-hours-diving-deep-into-fusion360-)
 
 ## Design
 
@@ -115,11 +115,11 @@ Getting the coordinate math right for the internal standoffs and walls took a fe
 
 **Total time spent: 2h**
 
-### 2026-10-23: Today I spent 2 hours diving deep into **Fusion360 and Onshape** to design a custom 3D-printable enclosure for the AURA.
+### 2026-10-23: Today I spent 4 hours diving deep into **Fusion360 and Onshape** to design a custom 3D-printable enclosure for the AURA.
 
 **4h**
 
-Today I spent 2 hours diving deep into **Fusion360 and Onshape** to design a custom 3D-printable enclosure for the AURA.
+Today I spent 4 hours diving deep into **Fusion360 and Onshape** to design a custom 3D-printable enclosure for the AURA.
 
 Designing a case around a custom PCB always sounds straightforward until you start dealing with tight tolerances and coordinate math. My main goal for this session was to build a clean two-part enclosure complete with internal mounting standoffs and precise cutouts for the Raspberry Pi Pico USB port, the OLED display, and the rotary knob.
 
