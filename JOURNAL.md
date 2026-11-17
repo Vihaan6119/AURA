@@ -17,7 +17,7 @@
 1. [2026-10-08: Work session](#2026-10-08-work-session)
 2. [2026-10-09: Work session](#2026-10-09-work-session)
 3. [2026-10-11: # Complete Hardware Design & Firmware Architecture](#2026-10-11-complete-hardware-design-firmware-architecture)
-4. [2026-10-22: Today I spent 2 hours working on **AURA**, focusing on two major milestones: optimizing the PCB layout to cut down manufacturing costs, and then jumping into OpenSCAD to design the custom 3D-printable](#2026-10-22-today-i-spent-2-hours-working-on-aura-focusing-on)
+4. [2026-10-22: Today I spent 2 hours working on **AURA**, focusing on two major milestones: optimizing the PCB layout to cut down manufacturing costs and then using Solid Craft to design the custom 3D-printable case](#2026-10-22-today-i-spent-2-hours-working-on-aura-focusing-on)
 5. [2026-10-23: Today I spent 4 hours diving deep into **Fusion360 and Onshape** to design a custom 3D-printable enclosure for the AURA.](#2026-10-23-today-i-spent-4-hours-diving-deep-into-fusion360-)
 
 ## Design
@@ -112,25 +112,25 @@ This is not the final code for the final version of Aura. This is just the basic
 
 Total time spent: 13h
 
-### 2026-10-22: Today I spent 2 hours working on **AURA**, focusing on two major milestones: optimizing the PCB layout to cut down manufacturing costs, and then jumping into OpenSCAD to design the custom 3D-printable
+### 2026-10-22: Today I spent 2 hours working on **AURA**, focusing on two major milestones: optimizing the PCB layout to cut down manufacturing costs and then using Solid Craft to design the custom 3D-printable case
 
 **2h**
 
-Today I spent 2 hours working on **AURA**, focusing on two major milestones: optimizing the PCB layout to cut down manufacturing costs, and then jumping into OpenSCAD to design the custom 3D-printable case!
-
+Today I spent 2 hours working on **AURA**, focusing on two major milestones: optimizing the PCB layout to cut down manufacturing costs and then using Solid Craft to design the custom 3D-printable case!
+---------
 ### 1. Tightening up the PCB layout in KiCad
-When looking at the initial board dimensions, I realized there was a bit too much wasted space between the switches, the Raspberry Pi Pico, and the OLED display. Since PCB fabrication costs scale with overall board size, reducing the footprint was a top priority.
-* Moved Cherry MX switches closer together.
-* Re-routed the traces for the EC11 rotary encoder and the 0.91" OLED display.
-* Kept the four corner mounting holes locked in place for structural stability.
+The thing was that when I uploaded the Gerber files to JLCPCB, the cost was coming around $8, which was way too high, so I searched online for how to cut down the PCB manufacturing prices. So I reduced the size of the PCB and even rearranged the components and re-routed them again for the new fit. And now the cost is coming to approximately $2-4.
 
 ![Screenshot 2026-10-22 191542](https://halflife.hackclub-assets.com/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/909bcc8fd745873cda24ce61c67f6c7474342bd497c66ef86f8a7702054377ef.png)
+
 ### 2. Moving on to Enclosure Design
-With the board geometry finalized, my next goal was to build a clean 3D-printable case using OpenSCAD. Designing an enclosure around a custom board can be tricky with clearances—you need just enough tolerance so the PCB slips in smoothly without rattling around.
+With the new board layout and design finalized, the next thing to do was to build a clean 3d case/enclosure for AURA. It is  quite new for me to make the enclosure, cus I am very new to 3d modeling.
+Till now I have just made a rectangle with smooth edges, a headphone stand, and an enclosure for a stardance  project (which I had followed via a guide). So I have watched soo many videos regarding making an enclosure that will actully fit and which software shld I actually use. So I tried Solid Craft (a free one which i still under development), then i switched to fusion 360 but soo many features were locked. Then I went back to Onshape for making the 3d model.
 
 ![Screenshot 2026-10-22 191505](https://halflife.hackclub-assets.com/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/7e617fae9a524549760db41d431c79f8c9d89aae01a8f2b00d0fad3cea9af453.png)
+(this is the screenshot of the 3d model of the PCB which i have imported into Solid Carft)
 
-Getting the coordinate math right for the internal standoffs and walls took a few iterations, but it's coming together nicely! Next session, I'll finish up the top lid geometry and the bottom half of the case and assemble the exclosure with the PCB into 1 .step file
+I will try to finish the enclosure asps cus i have my school to catch on and have exams to study for, this is getting too hectic and i am wasting my sleep (night sleep) inorder to finish the 3d model of this.
 
 **Total time spent: 2h**
 
