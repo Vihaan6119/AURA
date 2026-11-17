@@ -40,40 +40,67 @@
 
 # Complete Hardware Design & Firmware Architecture
 
-Over the course of designing **AURA**, I built a custom mechanical macro pad  to optimize my navigation and media control. Instead of relying on generic macro pads, I wanted a fully custom board featuring a Raspberry Pi Pico, an SSD1306 OLED display for media metadata, an EC11 rotary encoder for scrolling and volume control, and 6 mechanical keys.
+I built a custom macro pad  to help in  my navigation of vs-code, PDFs and media control. Instead of relying on generic macro pads, I wanted a fully custom board so i can change the key binding how ever I like. I used a  Raspberry Pi Pico for the main controlling of the board, an SSD1306 OLED display for showing media and other info, an EC11 rotary encoder for scrolling and volume control, and 6 mechanical keys for key bindings.
 
 Here is the complete log of the work completed across the design phases:
+-----------
+### 11-10-26:
+----------
+## Research and initial planning for **AURA**
 
-## 1. Schematic Design & Pin Mapping (`eeschema`)
+I first researched the project/product that I want and the knowledge of making it. So I decided to make a macropad.
+Then I started to research the components needed for this. My initial plan was to use an ESP32 C3. But then I settled on Raspberry Pi Pico, as it was more powerful and had more storage than the ESP. Another reason to choose the Raspberry Pi Pico was that I do not know much of C++, which is required for the ESP coding. But for the Raspberry Pi Pico, we can code it in python which is much easier to code in.
+
+I made some rough sketches of the PCB, the schematics, and the final 3d model.
+I had made 3 different layouts for the PCB and the 3D model. Then I have settled on this.
+
+![IMG_0028](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/0be80eeffe592080e195609ee3dffe4e94bc22ee01cf6622c8f89b2ca2a62aa6.jpg)
+
+![IMG_0026](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/ed8e2e382df3fa56168a825ad375642b2a393598d0bdf412e4a898cea65dd0a8.jpg)
+---------
+# 12-10-26
+-----------
+## 1. Schematic Design & Pin Mapping
 * **Microcontroller:** Integrated the Raspberry Pi Pico (`RaspberryPi_Pico_Debug`) as the brain of the board.
 * **OLED Display:** Wired an SSD1306 OLED screen via I2C, mapping Pico `GPIO0` (I2C0 SDA) and `GPIO1` (I2C0 SCL).
 * **Rotary Encoder:** Connected an EC11 encoder (`GPIO14` and `GPIO15` for rotation pulses, and `GPIO16` for the built-in push switch).
 * **Macro Keys & Mounting:** Scaled the design from an initial 3-key layout up to a full **6-key mechanical matrix** (`SW2` through `SW7`) tied to `GPIO02` through `GPIO07` with common ground paths. Added **4 M3 mounting holes** (`H1`–`H4`) in the corners for a secure enclosure build.
 * **Rule Checks:** Applied No-Connect flags (`X`) to all unused pins and successfully passed the Electrical Rules Check (ERC).
 
+![Screenshot 2026-10-08 230525](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/f4fff0af4cbcb7f6998ee7c43ba0bfb7477fc410215306686458cd29fef62fbf.png)\
 ## 2. PCB Layout & Copper Pour
-* **Component Placement:** Arranged the switches in a clean, ergonomic grid layout maintaining standard 1u (19.05 mm) spacing, positioned the OLED and encoder neatly above, and placed the Pico on the left side.
-* **Routing & DRC Constraints:** Routed all signal traces on the front and back copper layers, resolving track width and constraint rules to clear all Design Rules Checker (DRC) errors.
-
-## 3. Firmware Architecture (CircuitPython & USB HID)
-* **HID Emulation:** Designed the `code.py` script to utilize CircuitPython's `adafruit_hid` library, allowing the macro pad to act as a standard USB keyboard and consumer control device.
-* **Dynamic Configuration:** Implemented a `config.json` file loader on the `CIRCUITPY` drive, enabling keybindings to be easily customized without recompiling code.
-* **Encoder Modes:** Programmed multi-function encoder behavior—normal rotation handles vertical scrolling, `Shift + rotation` handles horizontal scrubbing, and `Fn + rotation` controls system volume.
-* **OLED Metadata & Sleep Mode:** Configured real-time display tracking for song titles, artist info, and progress bars, along with an automatic 15-minute inactivity sleep timer to dim the display.
-
----
-
-![Screenshot 2026-10-08 230525](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/f4fff0af4cbcb7f6998ee7c43ba0bfb7477fc410215306686458cd29fef62fbf.png)
+* **Component Placement:** Arranged the switches in the way that I had decided. I have made it bigger and wider so it is easier for me to solder the components and easy to press the keys and rotate the knob. ***Routing & DRC Constraints***: Routed all signal traces on the front and back copper layers, resolving all the errors to clear all Design Rules Checker (DRC) errors.
 
 ![Screenshot 2026-10-08 232145](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/e0bbbec4e846250cebf9d58d60e0020a28138c00014dd460461d159cc6ba9ddf.png)
 
-![Screenshot 2026-10-11 115818](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/b67b2480cbe3756a19142034fcab4beaed02dc8918b8ebd2f57a8458c3602235.png)
-
-![Screenshot 2026-10-11 124917](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/31ccd08d5fa881eab523bfeea95b626a6570f377ae5ff27c2da0fa66c5c4063f.png)
-
 ![Screenshot 2026-10-11 125030](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/490ef302ad02f8d894addfa5f6cddfb20aa69b12458d841db923b32f1132981a.png)
 
-Total time spent: 13h
+![Screenshot 2026-10-11 125102](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/e4e8d53081ac428655dd461ad5c61faaca676c56638d65044b280da386339f71.png)
+
+![Screenshot 2026-10-08 232112](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/aa7ff7e0f3017efaa6897646b3e934b6aa5a7640379d05e0f672649a2cae7680.png)
+
+![Screenshot 2026-10-11 125142](https://halflife.hackclub-assets.com/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/911abfdbb0fbf117f5c2751d510cc5780342c9ca8ee0ca1f63c56d3fe71673b4.png)
+
+------------------
+
+13-10-26
+--------------------
+
+First i have used AI for making the concept model for the 3d model for AURA. here are some of them:
+
+![image](https://halflife.hackclub-assets.com/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/2b9d4c6a2ee99173150b6c477e3af3e97aab97a28a7e1efc03034d824852b677.png)
+
+![Screenshot 2026-10-11 190924](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/88aca3cae0a368e32bb66b325ca7165f009b1bfb9a383ea8c95d1d23367d1ab2.png)
+
+Then I started to make the basic firmware design in VS Code for the Raspberry Pi Pico. I codded it in circuit python.
+
+## Firmware Architecture (CircuitPython & USB HID)
+* **HID Emulation:** Designed the `code.py` script to use CircuitPython's `adafruit_hid` library, allowing the macro pad to act as a standard USB keyboard and consumer control device.
+* **Dynamic Configuration:** Implemented a `config.json` file loader on the `CIRCUITPY` drive, which made it easy changing the  keybindings to be easily customized without recompiling code.
+* **Encoder Modes:** Programmed multi-function encoder behavior—normal rotation handles vertical scrolling, `Shift + rotation` handles horizontal scrubbing, and `Fn + rotation` controls system volume.
+* **OLED Metadata & Sleep Mode:** Configured real-time display tracking for song titles, artist info, and progress bars, along with an automatic 15-minute inactivity sleep timer to dim the display.
+
+This is not the final code for the final version of Aura. This is just the basic firmware. This will be changed and customized upon receiving the parts and configuring the actual hardware pin sockets.
 
 ![Screenshot 2026-10-11 190801](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/c50d877b85a8c450bf31cb70c8d65074ecf9df36cf870e807ab669056aff259c.png)
 
@@ -81,17 +108,9 @@ Total time spent: 13h
 
 ![Screenshot 2026-10-11 190820](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/418cb3bc4c356d5cadef18266f7257ddd1f20017a43c7022f4964c6f27fefc7a.png)
 
-![Screenshot 2026-10-11 190924](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/88aca3cae0a368e32bb66b325ca7165f009b1bfb9a383ea8c95d1d23367d1ab2.png)
+-------------
 
-(I have used this to bring my rough sketches to life, which makes it easy for me to design the PCB.)
-
-![IMG_0028](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/0be80eeffe592080e195609ee3dffe4e94bc22ee01cf6622c8f89b2ca2a62aa6.jpg)
-
-![IMG_0026](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/ed8e2e382df3fa56168a825ad375642b2a393598d0bdf412e4a898cea65dd0a8.jpg)
-
-![Screenshot 2026-10-11 125102](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/e4e8d53081ac428655dd461ad5c61faaca676c56638d65044b280da386339f71.png)
-
-![Screenshot 2026-10-08 232112](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/MqfXtqzyoV3kC5NbjDzdPoc1zza7pyWb/aa7ff7e0f3017efaa6897646b3e934b6aa5a7640379d05e0f672649a2cae7680.png)
+Total time spent: 13h
 
 ### 2026-10-22: Today I spent 2 hours working on **AURA**, focusing on two major milestones: optimizing the PCB layout to cut down manufacturing costs, and then jumping into OpenSCAD to design the custom 3D-printable
 
