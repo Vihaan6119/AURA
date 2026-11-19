@@ -79,12 +79,13 @@ This is the way (for this I am using Onshape. I think it will almost similar for
 | Item | Qty | Supplier | Cost/item | Total Cost | Link |
 | :--- | :---: | :--- | ---: | ---: | :--- |
 | Raspberry Pi Pico | 1 | besomi | $8.00 | $8.00 | [Link](https://besomi.com/ae_en/) |
-| SSD1306 OLED Display (0.91") | 1 | AliExpress | $1.23 | $1.23 | [Link](https://ar.aliexpress.com/?gatewayAdapt=glo2ara) |
-| EC11 Rotary Encoder with Switch | 1 | LCSC | $2.22 | $2.22 | [Link](https://www.lcsc.com/) |
-| Cherry MX Mechanical Switches | 10 | AliExpress | $0.71 | $7.10 | [Link](https://ar.aliexpress.com/?gatewayAdapt=glo2ara) |
-| M3 Screws and Standoffs Set | 30 | ALiExpress | $0.12 | $3.60 | [Link](https://ar.aliexpress.com/?gatewayAdapt=glo2ara) |
+| SSD1306 OLED Display (0.91") | 1 | besomi | $6.81 | $6.81 | [Link](https://besomi.com/ae_en/oddx0030-oled-091-inch-display-module-128x32-resolution-i2c-interface-4-pins-33v-5v.html) |
+| EC11 Rotary Encoder with Switch | 1 | LCSC | $2.22 | $2.22 | [Link]([https://www.lcsc.com/](https://www.lcsc.com/product-detail/C202365.html?spm=wm.gwc.xh.0.tp___wm.ssy.ssl.gwc&lcsc_vid=QFlcUVECElNWVlIDE1FbU1ZVEVhdBVYETgUNVQdSEwcxVlNfQlFbV1BXQVBaXjsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D)) |
+| Cherry MX Mechanical Switches | 10 | AliExpress | $0.71 | $7.10 | [Link]([https://ar.aliexpress.com/?gatewayAdapt=glo2ara](https://ar.aliexpress.com/item/1005012890575682.html?mp=1&gatewayAdapt=glo2ara)) |
+| M3 Screws and Standoffs Set | 30 | ALiExpress | $0.12 | $3.60 | [Link](https://ar.aliexpress.com/item/1005008237420603.html?mp=1&gatewayAdapt=glo2ara) |
 | Custom PCB (AURA) | 5 | JLC PCB | $0.80 | $4.00 | [Link](https://jlcpcb.com/) |
+| Keyboard cap | 10 | AliExpress | $0.11 | $1.10 | [Link]([https://jlcpcb.com/](https://ar.aliexpress.com/item/1005013259959755.html?mp=1&gatewayAdapt=glo2ara)) |
 | Estimated total shipping | 1 | Printing Legion | $3.00 | $3.00 | [Link](https://printlegion.hackclub.com/) |
 
 **Tax & shipping:** $15.59  
-**Total:** $44.75
+**Total:** $51.54 
