@@ -78,7 +78,7 @@ This is the way (for this I am using Onshape. I think it will almost similar for
 
 | Item | Qty | Supplier | Cost/item | Total Cost | Link |
 | :--- | :---: | :--- | ---: | ---: | :--- |
-| Raspberry Pi Pico | 1 | besomi | $8.00 | $8.00 | [Link](https://besomi.com/ae_en/) |
+| Raspberry Pi Pico | 1 | besomi | $8.00 | $8.00 | [Link]([https://besomi.com/ae_en/](https://besomi.com/ae_en/dedb0297-rp2040-raspberry-pi-pico.html)) |
 | SSD1306 OLED Display (0.91") | 1 | besomi | $6.81 | $6.81 | [Link](https://besomi.com/ae_en/oddx0030-oled-091-inch-display-module-128x32-resolution-i2c-interface-4-pins-33v-5v.html) |
 | EC11 Rotary Encoder with Switch | 1 | LCSC | $2.22 | $2.22 | [Link]([https://www.lcsc.com/](https://www.lcsc.com/product-detail/C202365.html?spm=wm.gwc.xh.0.tp___wm.ssy.ssl.gwc&lcsc_vid=QFlcUVECElNWVlIDE1FbU1ZVEVhdBVYETgUNVQdSEwcxVlNfQlFbV1BXQVBaXjsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D)) |
 | Cherry MX Mechanical Switches | 10 | AliExpress | $0.71 | $7.10 | [Link]([https://ar.aliexpress.com/?gatewayAdapt=glo2ara](https://ar.aliexpress.com/item/1005012890575682.html?mp=1&gatewayAdapt=glo2ara)) |
